@@ -49,7 +49,9 @@ Widget build(BuildContext context) {
     appBar: AppBar(...),
     body: ScrollToTop(
       scrollController: _scrollController,
-      child: buildListView(_scrollController),
+      child:  ListView.builder(
+        controller: _scrollController,
+        ...),
     ),
   );
 }
