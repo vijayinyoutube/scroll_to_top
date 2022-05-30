@@ -19,7 +19,7 @@ This package will help us reach the top of the page based on scroll offsets.
 ## Feature Image
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/58719230/171038356-c6ae8e80-e1b2-4ca2-b9ee-01ede360ee92.png" width="100%">
+<img src="https://user-images.githubusercontent.com/58719230/171054127-70599a63-9966-4f90-b035-676433169c21.png" width="100%">
 </p>
 
 ## Getting started
