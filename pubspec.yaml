@@ -1,6 +1,6 @@
 name: scroll_to_top
 description: This package will help us reach the top of the page based on scroll offsets.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/vijayinyoutube/scroll_to_top
 
 environment:
