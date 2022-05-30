@@ -1,39 +1,95 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+<div align="center">
 
-## Features
+# coloredcontainer
+  
+[![BUILD](https://img.shields.io/badge/Build-Passing-<COLOR>.svg)](https://github.com/vijayinyoutube/scroll_to_top)
+[![vijaycreations](https://img.shields.io/badge/Follow_me-vijaycreations-orange.svg?&logo=youtube&logoColor=orange)](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ)
+[![Repo Status](https://img.shields.io/badge/RepoStatus-Active-blueviolet.svg)](https://github.com/vijayinyoutube/scroll_to_top)
+[![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/vijayinyoutube/scroll_to_top)
+[![Flutter](https://img.shields.io/badge/_Flutter_-Package-grey.svg?&logo=Flutter&logoColor=white&labelColor=blue)](https://github.com/vijayinyoutube/scroll_to_top)
+</div>
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Description
+
+This package will help us reach the top of the page based on scroll offsets.
+
+## Feature Image
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58719230/171038356-c6ae8e80-e1b2-4ca2-b9ee-01ede360ee92.png" width="100%">
+</p>
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following to your pubspec.yaml file.
+
+```yaml
+dependencies:
+  scroll_to_top: 0.0.1
+```
+
+Import the package.
+
+```dart
+import 'package:scroll_to_top/scroll_to_top.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Wrap any flutter widget like ```ListView.builder``` with ```scroll_to_top``` widget. Make sure both these widgets have the same ```scrollController ```
+
 
 ```dart
-const like = 'sample';
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(...),
+    body: ScrollToTop(
+      scrollController: _scrollController,
+      child: buildListView(_scrollController),
+    ),
+  );
+}
 ```
+## Sample Result
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58719230/171045112-6c60116d-f67f-4723-b2f5-1c435585aa4f.gif" width="100%">
+</p>
+
+
+## License
+
+```
+MIT License
+
+Copyright (c) 2022 Vijay R
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+To know more awesome content about Flutter., 
+
+Visit my channel 👉 : https://www.youtube.com/c/vijaycreationsflutter
