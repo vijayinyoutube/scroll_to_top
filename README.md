@@ -3,7 +3,7 @@
 
 <div align="center">
 
-# coloredcontainer
+# scroll_to_top
   
 [![BUILD](https://img.shields.io/badge/Build-Passing-<COLOR>.svg)](https://github.com/vijayinyoutube/scroll_to_top)
 [![vijaycreations](https://img.shields.io/badge/Follow_me-vijaycreations-orange.svg?&logo=youtube&logoColor=orange)](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ)
@@ -49,7 +49,9 @@ Widget build(BuildContext context) {
     appBar: AppBar(...),
     body: ScrollToTop(
       scrollController: _scrollController,
-      child: buildListView(_scrollController),
+      child:  ListView.builder(
+        controller: _scrollController,
+        ...),
     ),
   );
 }
