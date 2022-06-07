@@ -28,7 +28,7 @@ Add the following to your pubspec.yaml file.
 
 ```yaml
 dependencies:
-  scroll_to_top: 0.0.3
+  scroll_to_top: 0.0.5
 ```
 
 Import the package.
